@@ -16,10 +16,15 @@ def removeNewLines(file):
 
 class Checker:
     def __init__(self, name1, name2):
-        self._file1 = removeNewLines(open(name1, 'r').readlines())
-        self._file2 = removeNewLines(open(name2, 'r').readlines())
+        self._f1 = open(name1, 'r')
+        self._f2 = open(name2, 'r')
+        self._file1 = removeNewLines(self._f1.readlines())
+        self._file2 = removeNewLines(self._f2.readlines())
         self._lines = []  # List of lines
         self._errorCount = 0
+
+        self._f1.close()
+        self._f2.close()
 
     def errorCheck(self):
         """Check for errors in each line"""
