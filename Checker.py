@@ -41,7 +41,7 @@ class Checker:
 
             self._lines.append(newLine)
 
-        # TODO: What should happen is a line is extra long?
+        # TODO: What should happen is a line is extra long? Test 3
         # Example Output: line vs line!!!
         #   Char[end]: 'None' -> '!'
         #   Char[end]: 'None' -> '!'
@@ -51,10 +51,14 @@ class Checker:
         #   Char[5]: '!' -> 'None'
         #   Char[6]: '!' -> 'None'
 
+        # TODO: What should happen if a line is "a different line" altogether?
+        # What defines a different line
+        # How should the error look?
+
     def printErrors(self):
         if self._errorCount == 0:
             print("Files are Identical")
         else:
-            print("File Differences")
+            print("\t" + "File Differences" + "\n")
             for line in self._lines:
                 line.printErrors()

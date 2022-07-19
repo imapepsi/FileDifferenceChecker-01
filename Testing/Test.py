@@ -1,14 +1,24 @@
 import unittest
-import itertools
+
 
 class MyTestCase(unittest.TestCase):
-    def test_something(self):
+    def test_sameFiles(self):
+        print("Same Files")
 
-        foo = ['a', 'b', 'c']
-        bar = [1, 2]
+    def test_characterDiff(self):
+        print("Mismatch Characters")
 
-        for f, b in itertools.zip_longest(foo, bar):
-            print(f, b)
+    def test_extraCharacters(self):
+        print("Extra Characters")
+
+    def test_extraLines(self):
+        print("Extra Lines")
+
+    def test_skippedLines(self):
+        print("Skipped Lines")
+
+    def test_differentLines(self):
+        print("Skipped Lines")
 
 
 if __name__ == '__main__':

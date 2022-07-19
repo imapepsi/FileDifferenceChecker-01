@@ -14,13 +14,10 @@ if __name__ == '__main__':
     fileName2 = str(sys.argv[2])
 
     try:
-        # Create a Checker
         myCheck = Checker.Checker(fileName1, fileName2)
 
-        # Check if each line is the same length
         myCheck.errorCheck()
 
-        # Output result
         myCheck.printErrors()
 
     except Exception as e:
