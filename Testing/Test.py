@@ -1,10 +1,8 @@
 import Checker
 import unittest
 
-class MyTestCase(unittest.TestCase):
-    # def __init__(self):
-    #     self._checker = Checker.Checker(str(sys.argv[1]), str(sys.argv[2]))
 
+class MyTestCase(unittest.TestCase):
     def test_sameFiles(self):
         print("Same Files")
         checker = Checker.Checker("Test00a.txt", "Test00b.txt")
@@ -16,7 +14,6 @@ class MyTestCase(unittest.TestCase):
         Same Files
         Files are Identical
         """
-
 
     def test_characterDiff(self):
         print("Mismatch Characters")
