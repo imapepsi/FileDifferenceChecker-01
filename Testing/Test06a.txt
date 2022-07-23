@@ -1,0 +1,4 @@
+Test 06
+- New lines inserted in the middle
+
+Hello World

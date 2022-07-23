@@ -1,0 +1,7 @@
+Test 06
+- New lines inserted in the middle
+
+This is a new line:)
+Another new line:)
+
+Hello World
